@@ -364,6 +364,7 @@
           </ul>
         </div>
       </section>
+      <!-- Постоянные клиенты -->
       <section class="regular-clients">
         <div class="container">
           <h2 class="regular-clients__title section-title">Постійні клієнти</h2>
@@ -446,138 +447,146 @@
       <!-- Модальное окно -->
       <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button data-modal-close class="btn-modal" type="button">
+          <button data-modal-close class="modal__btn" type="button">
             <svg class="icon-close" width="18px" height="18px">
               <use href="./images/icons.svg#icon-close-btn"></use>
             </svg>
           </button>
-          <p class="form-name">Залиште свої дані, ми вам передзвонимо</p>
+          <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>
           <form class="form">
-            <label class="form-field">
-              <span class="input-name">Ім'я</span>
-              <input type="text" name="name" class="input" autofocus />
-              <svg class="icon" width="18px" height="18px">
+            <label class="form__field">
+              <span class="form__title">Ім'я</span>
+              <input type="text" name="name" class="form__input" autofocus />
+              <svg class="form__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </label>
-            <label class="form-field">
-              <span class="input-name">Телефон</span>
-              <input type="tel" name="tel" class="input" />
-              <svg class="icon" width="18px" height="18px">
+            <label class="form__field">
+              <span class="form__title">Телефон</span>
+              <input type="tel" name="tel" class="form__input" />
+              <svg class="form__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
             </label>
-            <label class="form-field">
-              <span class="input-name">Пошта</span>
-              <input type="email" name="mail" class="input" />
-              <svg class="icon" width="18px" height="18px">
+            <label class="form__field">
+              <span class="form__title">Пошта</span>
+              <input type="email" name="mail" class="form__input" />
+              <svg class="form__icon" width="18px" height="18px">
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </label>
-            <label class="form-field">
-              <span class="input-name">Коментар</span>
-              <textarea class="comment" name="comment" placeholder="Введіть текст"></textarea>
+            <label class="form__field">
+              <span class="form__title">Коментар</span>
+              <textarea class="form__comment" name="comment" placeholder="Введіть текст"></textarea>
             </label>
-            <label class="form-field checkbox-field">
-              <input class="checkbox" type="checkbox" name="policy" />
-              <svg class="icon-checkbox" width="15px" height="15px">
+            <label class="form__checkbox-field">
+              <input class="form__checkbox" type="checkbox" name="policy" />
+              <svg class="form__checkbox-icon" width="15px" height="15px">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
-              <span class="policy">
+              <span class="form__policy">
                 Погоджуюся з розсилкою та приймаю
-                <a class="policy-link" href="#">Умови договору</a>
+                <a class="form__policy-link" href="#">Умови договору</a>
               </span>
             </label>
-            <button type="submit" class="modal-submit">Відправити</button>
+            <button type="submit" class="form__btn">Відправити</button>
           </form>
         </div>
       </div>
     </main>
     <footer class="footer">
-      <div class="container">
-        <div class="footer-main">
-          <a href="./index.html" lang="en" class="logo footer"
-            ><span class="logo__text-first-part">Web</span>Studio</a
+      <div class="footer__container container">
+        <div>
+          <a href="./index.html" lang="en" class="logo logo--footer-version"
+            ><span class="logo__text">Web</span>Studio</a
           >
           <address>
             <ul class="address list">
-              <li class="item">
+              <li class="address__item">
                 <a
                   href="https://goo.gl/maps/sM3v4koPLSNXQLYt6"
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  class="street"
+                  class="address__street"
                   >м. Київ, пр-т Лесі Українки, 26</a
                 >
               </li>
-              <li class="item">
-                <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+              <li class="address__item">
+                <a href="mailto:info@devstudio.com" class="address__link">info@devstudio.com</a>
               </li>
-              <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+              <li class="address__item">
+                <a href="tel:+380961111111" class="address__link">+38 096 111 11 11</a>
+              </li>
             </ul>
           </address>
         </div>
-        <div class="footer-links">
-          <p class="footer-text">приєднуйтесь</p>
-          <ul class="list footer-social-media">
-            <li class="unit">
+        <div class="company-social-media">
+          <p class="company-social-media__text">приєднуйтесь</p>
+          <ul class="company-social-media__list list">
+            <li class="company-social-media__item">
               <a
-                class="social-media-link"
+                class="company-social-media__link"
                 href="https://www.instagram.com/"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
               >
-                <svg class="social-media-icon" width="20px" height="20px">
+                <svg class="company-social-media__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="unit">
+            <li class="company-social-media__item">
               <a
-                class="social-media-link"
+                class="company-social-media__link"
                 href="https://twitter.com/"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
               >
-                <svg class="social-media-icon" width="20px" height="20px">
+                <svg class="company-social-media__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="unit">
+            <li class="company-social-media__item">
               <a
-                class="social-media-link"
+                class="company-social-media__link"
                 href="https://www.facebook.com/"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
               >
-                <svg class="social-media-icon" width="20px" height="20px">
+                <svg class="company-social-media__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="unit">
+            <li class="company-social-media__item">
               <a
-                class="social-media-link"
+                class="company-social-media__link"
                 href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noreferrer noopener nofollow"
               >
-                <svg class="social-media-icon" width="20px" height="20px">
+                <svg class="company-social-media__icon" width="20px" height="20px">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form class="footer-form">
-          <div class="form-field">
-            <label for="email" class="footer-form-lable">Підпишіться на розсилку</label>
-            <input class="footer-input" type="email" name="email" id="email" placeholder="E-mail" />
+        <form class="subscribe-form">
+          <div class="subscribe-form__field">
+            <label for="email" class="subscribe-form__lable">Підпишіться на розсилку</label>
+            <input
+              class="subscribe-form__input"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="E-mail"
+            />
           </div>
-          <button class="btn-subscribe" type="submit">
+          <button class="subscribe-form__btn" type="submit">
             Підписатися
-            <svg class="icon-send" width="24px" height="24px">
+            <svg class="subscribe-form__icon" width="24px" height="24px">
               <use href="./images/icons.svg#icon-send"></use>
             </svg>
           </button>
