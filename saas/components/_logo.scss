@@ -14,3 +14,12 @@
 .logo__text {
     color: $accent-color;
 }
+
+.logo--footer-version {
+    color: $white-color;
+
+    display: inline-block;
+    margin-right: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
